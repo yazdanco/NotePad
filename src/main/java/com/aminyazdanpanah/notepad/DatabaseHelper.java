@@ -5,6 +5,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
 
 /**
  * Created by Amin Yazdanpanah. -> LinkedIn.com/aminyazdanpanah
@@ -51,10 +52,17 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return data;
     }
 
+    public boolean deleteText(int id)
+    {
+        db = this.getWritableDatabase();
+        return db.delete(TABLE_NAME, COLUMN_ID + "=" + id, null) > 0;
+    }
+
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         String query = "DROP TABLE IF EXISTS "+TABLE_NAME;
         db.execSQL(query);
         this.onCreate(db);
     }
+
 }
