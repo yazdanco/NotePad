@@ -30,6 +30,14 @@
         android:paddingLeft="10dp"
         android:textSize="14dp"
         android:textColor="@android:color/tab_indicator_text"/>
-
+    <Button
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:id="@+id/delete"
+        android:onClick="onDeleteButtonClick"
+        android:background="@drawable/trash"
+        android:layout_alignParentRight="true"
+        android:padding="10dp"
+        />
 
 </RelativeLayout>
