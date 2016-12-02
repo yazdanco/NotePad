@@ -1,8 +1,10 @@
 package com.aminyazdanpanah.notepad;
 
+import android.content.Intent;
 import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -13,11 +15,14 @@ import java.io.IOException;
  * Created by Amin Yazdanpanah. -> LinkedIn.com/aminyazdanpanah
  */
 public class ShowText extends AppCompatActivity {
-TextView showtext;
+    TextView showtext;
+    int FileId;
+    DatabaseHelper helper = new DatabaseHelper(this);
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_show_text);
+        FileId = Integer.parseInt(getIntent().getStringExtra("FileID"));
         String FileName = getIntent().getStringExtra("FileName");
         String PathFile = getIntent().getStringExtra("PathFile");
         setTitle(FileName + ".txt");
@@ -45,9 +50,12 @@ TextView showtext;
 
         } catch (IOException e) {
             e.printStackTrace();
-            Toast.makeText(getBaseContext(),"You deleted the file!!!",Toast.LENGTH_LONG).show();
+            helper.deleteText(FileId);
+            Toast.makeText(getBaseContext(),"The file was deleted by another app! ",Toast.LENGTH_LONG).show();
+            Intent i = new Intent(ShowText.this,MainActivity.class);
+            i.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+            startActivity(i);
             finish();
-
         }
         return response;
 
