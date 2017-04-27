@@ -1,8 +1,8 @@
 <div>
-<div style="width: 300px" width: 300px>
+<div style="width: 200px" width: 300px>
 <img src="http://www.aminyazdanpanah.com/public/images/Notepad.gif" width="300px">
 </div>
-<div width: 300px>
+<div style="width: 200px" width: 300px>
 ## Simple Notepad
 Simple notepad that can use for learning android code.
 ## Usage
