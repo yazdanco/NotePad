@@ -1,8 +1,6 @@
 <table border=0>
 <tr>
-<td width=300px>
-<img src="http://www.aminyazdanpanah.com/public/images/Notepad.gif" width="300px">
-</td>
+
 <td>
 
 
@@ -20,6 +18,9 @@ V1.0
 © Copyright 2017 Amin Yazdanpanah
 
 
+</td>
+<td width=300px>
+<img src="http://www.aminyazdanpanah.com/public/images/Notepad.gif" width="300px">
 </td>
 </tr>
 </table>
