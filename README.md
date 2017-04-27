@@ -7,7 +7,7 @@
 ## Simple Notepad
 Simple notepad that can use for learning android code.
 ## Usage
-To write something in your mobile
+To write something in your Android smart phone
 ## Installation
 1. Clone it `git clone https://github.com/aminyazdanpanah/NotePad.git`
 2. Build it with Android Studio
