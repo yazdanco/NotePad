@@ -1,6 +1,6 @@
 <div>
 <div style="width: 300px">
-<img src="http://www.aminyazdanpanah.com/public/images/Notepad.gif">
+<img src="http://www.aminyazdanpanah.com/public/images/Notepad.gif" width="300px">
 </div>
 <div>
 ## Simple Notepad
