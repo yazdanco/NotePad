@@ -1,4 +1,10 @@
+<table border=0>
+<tr>
+<td width=300px>
 <img src="http://www.aminyazdanpanah.com/public/images/Notepad.gif" width="300px">
+</td>
+<td>
+
 
 ## Simple Notepad
 Simple notepad that can use for learning android code.
@@ -12,3 +18,8 @@ To write something in your mobile
 V1.0
 ## License
 © Copyright 2017 Amin Yazdanpanah
+
+
+</td>
+</tr>
+</table>
