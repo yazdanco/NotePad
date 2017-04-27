@@ -4,7 +4,7 @@
 <td>
 
 
-## Simple Notepad
+## 📝 Simple Notepad
 Simple notepad that can use for learning android code.
 ## Usage
 To write something in your Android smart phone
