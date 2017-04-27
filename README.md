@@ -1,4 +1,5 @@
 <img src="http://www.aminyazdanpanah.com/public/images/Notepad.gif" width="300px">
+
 ## Simple Notepad
 Simple notepad that can use for learning android code.
 ## Usage
